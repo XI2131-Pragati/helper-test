@@ -1,0 +1,18 @@
+secret:
+  name: aadhaar-service-secret
+# Environment variable listing
+env:
+  # non sensitive variables
+  normal:
+    AZURE_SERVICE_BUS_DOCUMENT_QUEUE_NAME: "demo"
+    PORT: 3600
+    MAX_THREADS: 5
+  # sensitive variables
+  secret:
+    DB_USERNAME: "demo"
+    DB_PASSWORD: "demo"
+    GRAPHQL_ADMIN_SECRET: "demo"
+    AZURE_STORAGE_ACCOUNT_NAME: "demo"
+    AZURE_ACCOUNT_ACCESS_KEY: "demo"
+    AZURE_SERVICE_BUS_CONNECTION_STRING: "demo"
+    KEYCLOAK_BASE_URL: "demo"

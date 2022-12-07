@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: aadhaar-service
+spec:
+  containers:
+  - name: mycontainer
+    image: redis
+    env:
+    {{- include "helpers.list-env-variables" . | indent 6 }}
+  restartPolicy: Never
